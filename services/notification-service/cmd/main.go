@@ -10,10 +10,9 @@ import (
 	"time"
 
 	"Phantom_backend/pkg/logger"
-	"Phantom_backend/services/notific
 	"Phantom_backend/services/notification-service/internal/config"
 	"Phantom_backend/services/notification-service/internal/handlers"
-	"Phantom_backend/pkg/logger"
+	"Phantom_backend/services/notification-service/internal/middleware"
 
 	"github.com/gorilla/mux"
 	"go.uber.org/zap"
@@ -68,5 +67,4 @@ func main() {
 	}
 
 	log.Info("Server exited")
-d
 }
