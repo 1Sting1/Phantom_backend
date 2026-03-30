@@ -1,0 +1,2 @@
+-- Optional: remove seeded categories by id (only if you want to reverse)
+-- DELETE FROM categories WHERE id IN ('general', 'installation', 'features', 'development');
