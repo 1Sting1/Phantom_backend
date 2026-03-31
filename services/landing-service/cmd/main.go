@@ -33,6 +33,10 @@ func main() {
 	}
 	defer db.Close()
 
+	if err := config.RunMigrations(db); err != nil {
+		log.Fatal("Failed to run migrations", zap.Error(err))
+	}
+
 	router := mux.NewRouter()
 
 	router.Use(middleware.Logger(log))
